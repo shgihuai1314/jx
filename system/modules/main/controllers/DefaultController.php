@@ -72,7 +72,7 @@ class DefaultController extends BaseController
             $groupCount = Group::find()->count();
 
             $onlineAt = date('Y-m-d', Modules::findOne(['module_id' => 'main'])->create_at);
-            return $this->render('welcome', [
+            return $this->render('welcome2', [
                 'data' => [
                     'userCount' => $userCount,
                     'adminCount' => $adminCount,

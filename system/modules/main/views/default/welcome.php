@@ -148,7 +148,7 @@ $systemName = Tool::getSystemName();
 		</div>
 	
 	</div>
-	<!--<div class="layui-row mb20 ">
+	<div class="layui-row mb20 ">
 		<div class="layui-col-lg6 layui-col-md6 layui-col-xs6 yd-notice">
 			<div class="bgcolor-ff yd-notice-left">
 				<div class="ibox-title">
@@ -163,25 +163,25 @@ $systemName = Tool::getSystemName();
 						<tbody>
 						<tr>
 							<td class="text-r bold">系统名称</td>
-							<td class="c666"><?/*= Yii::$app->systemConfig->getValue('SYSTEM_NAME') */?></td>
+							<td class="c666"><?= Yii::$app->systemConfig->getValue('SYSTEM_NAME')?></td>
 						</tr>
 						<tr>
 							<td class="text-r bold">系统版本</td>
-							<td class="c666 word-break"><?/*= VERSION */?></td>
+							<td class="c666 word-break"><?= VERSION ?></td>
 						</tr>
 						<tr>
 							<td class="text-r bold">开发者</td>
 							<td class="c666"><a href="http://www.yudear.cn"
-										target="_blank"><?/*= Yii::$app->systemConfig->getValue('SYSTEM_AUTHOR', '武汉雨滴科技有限公司') */?></a>
+										target="_blank"><?= Yii::$app->systemConfig->getValue('SYSTEM_AUTHOR', '武汉雨滴科技有限公司') ?></a>
 							</td>
 						</tr>
 						<tr>
 							<td class="text-r bold">服务器环境</td>
-							<td class="c666"><?/*= isset($data['systemName']) ? $data['systemName'] : '-' */?></td>
+							<td class="c666"><?= isset($data['systemName']) ? $data['systemName'] : '-' ?></td>
 						</tr>
 						<tr>
 							<td class="text-r bold">上线时间</td>
-							<td class="c666"><?/*= isset($data['onlineAt']) ? $data['onlineAt'] : '-' */?></td>
+							<td class="c666"><?= isset($data['onlineAt']) ? $data['onlineAt'] : '-' ?></td>
 						</tr>
 						</tbody>
 					</table>
@@ -204,10 +204,10 @@ $systemName = Tool::getSystemName();
 				</div>
 			</div>
 		</div>
-	</div>-->
+	</div>
 <?php endif; ?>
 	<script>
-        /*产品信息与系统公告高度一致*/
+        产品信息与系统公告高度一致
         function heightSame(obj, obj1) {
             var num = obj.height();//左边的高度
             var num1 = obj1.height();//右边的高度
@@ -251,7 +251,7 @@ $systemName = Tool::getSystemName();
         });
 
         //生成环形图
-       /* function getJSONData() {
+        function getJSONData() {
             $.ajax({
                 url: '',//\yii\helpers\Url::to(['default/system-config'])
                 dataType: 'json',
@@ -530,10 +530,10 @@ $systemName = Tool::getSystemName();
                     );
                 },
             });
-        }*/
+        }
 
         //给图形替换数据
-     /*   setInterval(function () {
+        setInterval(function () {
             var csrfToken = $('meta[name="csrf-token"]').attr("content");
             $.ajax({
                 url: '',
@@ -635,7 +635,7 @@ $systemName = Tool::getSystemName();
                     });
                 },
             });
-        }, 3000);*/
+        }, 3000);
 
         //网络实时流量
         function NetImg() {
@@ -820,7 +820,7 @@ $systemName = Tool::getSystemName();
             });
         }
 
-  /*      $.ajax({
+        $.ajax({
             url: '',
             dataType: 'json',
             type: 'get',
@@ -829,7 +829,7 @@ $systemName = Tool::getSystemName();
                 DownSpeed = res.data.speed.NetOutSpeed;
                 NetImg();
             },
-        });*/
+        });
 
 	</script>
 <?php endif; ?>

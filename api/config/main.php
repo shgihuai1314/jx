@@ -6,7 +6,7 @@ $params = array_merge(
 
 return [
     'id' => 'app-api',
-    'name' => '雨滴慕课Api系统',
+    'name' => '考试Api系统',
     'timeZone' => env('timeZone', 'Asia/Shanghai'),
     'basePath' => dirname(__DIR__),
     'sourceLanguage' => env('sourceLanguage', 'en-US'),
