@@ -1,0 +1,121 @@
+
+li {
+    list-style: none;
+}
+
+/*隐藏横向滚动条*/
+#dialoge {
+    overflow-x: hidden;
+}
+
+/*去除框架里面的margin*/
+.layui-layer-content .layui-tab {
+    margin: 0 !important;
+}
+
+.layui-layer {
+    box-shadow: 0 0 20px rgba(0, 0, 0, .5) !important;
+}
+
+.layui-layer-btn .layui-layer-btn0 {
+    border-color: #1988fa !important;
+    background-color: #1988fa !important;
+}
+
+.layui-layer-iframe .layui-layer-btn, .layui-layer-page .layui-layer-btn {
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+}
+
+/*自定义弹窗上面的tab切换*/
+#dialoge .dialoge-top-ul {
+    position: relative;
+    left: 0;
+    height: 40px;
+    white-space: nowrap;
+    font-size: 0;
+    margin: 0 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+#dialoge .dialoge-top-ul li {
+    display: inline-block;
+    text-align: center;
+    font-size: 14px;
+    transition: all .2s;
+    -webkit-transition: all .2s;
+    position: relative;
+    line-height: 40px;
+    min-width: 65px;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+/*点击的时候添加样式*/
+#dialoge .dialoge-top-ul li.layui-this {
+    color: #000;
+    cursor: pointer;
+}
+
+#dialoge .dialoge-top-ul li.layui-this:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: '';
+    width: 100%;
+    height: 41px;
+    border: 1px solid #ddd;
+    border-bottom-color: #fff;
+    border-radius: 2px 2px 0 0;
+    -webkit-box-sizing: border-box !important;
+    -moz-box-sizing: border-box !important;
+    box-sizing: border-box !important;
+    pointer-events: none;
+}
+
+/*弹窗内容部分*/
+.dialoge-content {
+    font-size: 14px;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+/*批量操作按钮*/
+#batch {
+    float: right;
+}
+
+/*表单固定宽度 超出显示隐藏*/
+.system-name .use-img {
+    margin-right: 5px;
+    float: left;
+}
+
+.system-name .use-name {
+    float: left;
+    line-height: 20px;
+    text-align: left;
+}
+
+.system-email, .system-group {
+    line-height: 20px;
+    text-align: left;
+}
+
+.system-box {
+    max-width: 60px;
+    height: 18px;
+}
+
+.system-btn {
+    min-width: 80px;
+}
+
+.system-name .use-name,
+.system-email, .system-box {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

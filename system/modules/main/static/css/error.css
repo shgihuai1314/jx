@@ -1,0 +1,91 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+body {
+    background-color: #f4f6f8;
+}
+
+.service-error-block {
+    text-align: center;
+}
+
+.service-error-block .service-error {
+    /*width: 514px;*/
+    margin: 20px auto 0;
+}
+
+.service-error-block .service-error img {
+    width: 320px;
+    height: 320px;
+}
+
+.service-error-block .service-error h3 img {
+    width: 264px;
+    height: 33px;
+    margin: 15px auto;
+}
+.service-error-block .service-error .error-operation ul{
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+.service-error-block .service-error .error-operation li {
+    display: inline-block;
+    margin-right: 25px;
+    margin-bottom: 8px;
+}
+
+.service-error-block .service-error .error-operation li a {
+    font-size: 14px;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    color: #31a4ff;
+    text-decoration: none;
+}
+
+.service-error-block .service-error .error-operation li a span {
+    color: #a0a0a0;
+    margin-left: 10px;
+}
+
+.service-error-block .service-error .error-operation li a .fa {
+    font-size: 15px;
+    color: #9ca5ad;
+    margin-right: 8px;
+}
+
+.service-error-block .service-error .error-prompting {
+    margin-bottom: 10px;
+}
+
+.service-error-block .service-error .error-prompting p {
+    font-size: 14px;
+    line-height: 28px;
+    color: #a0a0a0;
+}
+
+/*版权*/
+.service-error-copy {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.service-error-copy p {
+    font-size: 12px;
+    line-height: 30px;
+    color: #b5b7b9;
+}
+/*适配样式开始*/
+@media (max-width: 767px) {
+    .service-error-block .service-error img {width: 200px;height: 200px;}
+    .service-error-block .service-error {margin: 50px auto 0;}
+    .service-error-copy{padding: 0 30px; box-sizing: border-box;}
+}
+/*适配样式结束*/

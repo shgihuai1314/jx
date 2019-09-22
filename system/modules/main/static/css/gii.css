@@ -1,0 +1,6 @@
+
+.custom-quote {padding: 15px 0 0; margin: 0; overflow: hidden;}
+#detail-content .layui-elem-field legend {font-size: 15px;}
+#preview-content table thead th {font-weight: bold; text-align: center;}
+#preview-content table tbody td {text-align: center;}
+#preview-content table .layui-form-checkbox[lay-skin=primary] {margin-top: 0;}

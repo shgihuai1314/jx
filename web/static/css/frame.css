@@ -1,0 +1,16 @@
+body {overflow-x:hidden; height: 100%;}
+/* 缩小layui的日历插件  解决frame窗口较小时日历插件显示溢出问题 */
+body .layui-laydate {margin: 0;}
+body .layui-laydate-main {width: 230px;}
+body .layui-laydate-header {padding: 3px;}
+body .layui-laydate-header i {top: 3px;}
+body .layui-laydate-content {padding: 5px 10px;}
+body .layui-laydate-content td, body .layui-laydate-content th {padding: 0; width: 30px; height: 25px;}
+body .layui-laydate-footer {height: 36px; padding: 5px 10px;}
+body .laydate-footer-btns {right: 5px; top: 5px;}
+body .layui-laydate-list {padding: 0;}
+body .laydate-time-list p {top: 0;}
+body .laydate-time-list ol {height: 157px;}
+
+.layui-row {padding-top: 20px;}
+.layui-table, .layui-table-view {margin: 0;}

@@ -1,0 +1,17 @@
+/** 选择用户控件 */
+.select-user .user-item-box li { float: left; height: 60px; text-align: center; margin: 0 8px 10px 0; text-overflow: ellipsis; white-space: normal; overflow: hidden; }
+/** 选择用户弹窗 */
+#weui-popup-select_user .weui-navbar {padding: 0;}
+#weui-popup-select_user .weui-cells {font-size: inherit;}
+#weui-popup-select_user .weui-cell.breadcrumb a {color: #1988fa; font-size: 15px;}
+#weui-popup-select_user .weui-cell.breadcrumb .cite {color: #aaa;}
+#weui-popup-select_user .weui-cell.check-all {padding: 10px 15px;}
+#weui-popup-select_user .weui-cell.item {padding: 0 0 0 15px; color: #666; box-sizing: border-box; overflow: hidden; display: flex;}
+#weui-popup-select_user .weui-cell.item .weui-check__label { width: 100%; padding: 10px 0; line-height: 35px; display: flex;}
+#weui-popup-select_user .weui-cell.item .weui-check__label ~ .get-child {width: 25%;}
+#weui-popup-select_user .weui-cell.item .weui-check__label ~ .get-child.disabled {color: #c4c6d6;}
+#weui-popup-select_user .weui-cell.item .weui-check__label > div {float: left;}
+#weui-popup-select_user .weui-cell.item .weui-check__label p { height: 35px; display: flex;}
+#weui-popup-select_user .weui-cell.item .weui-check__label span.count {color: #888; margin-left: 5px; flex: 1;}
+#weui-popup-select_user .weui-cell.item .get-child {width: 20%; float: left; line-height: 20px; box-sizing: border-box; text-align: center; border-left: 1px solid #c4c6d6; color: #1988fa;}
+#weui-popup-select_user .weui-cell.item .get-child span {font-size: 14px;}

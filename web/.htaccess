@@ -1,0 +1,14 @@
+Options +FollowSymLinks
+IndexIgnore */*
+
+RewriteEngine on
+
+# if a directory or a file exists, use it directly
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+SetEnvIf Authorization .+ HTTP_AUTHORIZATION=$0
+
+#RewriteBase /
+#RewriteRule ^index\.html$ - [L]
+#RewriteRule . /index.html [L]

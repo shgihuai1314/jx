@@ -1,0 +1,10 @@
+/ueditor
+/log.db
+/log.db-journal
+/upload/*
+# /upload/datafile/*
+# !/upload/contacts/template/contacts-import.xls
+# !/upload/avatar/default/
+# !/upload/document/example.xls
+/data/*
+/public/*

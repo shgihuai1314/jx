@@ -1,0 +1,2 @@
+php extension\Workerman\Start\start_cron.php extension\Workerman\Start\message.php extension\Workerman\Start\push.php extension\GatewayWorker\Start\start_register.php extension\GatewayWorker\Start\start_gateway.php extension\GatewayWorker\Start\start_businessworker.php
+pause

@@ -1,0 +1,29 @@
+/**ztree样式调整开始**/
+.ztree * { box-sizing: border-box; }
+.ztree ul > li { /*padding: 0 0 4px 0;*/ line-height: 22px; }
+.ztree li span.button.add, .ztree li span.button.edit, .ztree li span.button.remove { margin: 4px 0 0 2px; }
+.ztree li span.button.add { background-position: -144px 0; vertical-align: top; }
+.ztree li span { font-size: 14px; line-height: 15px; }
+.ztree li span.fa, .ztree li span.iconfont { font-size: 14px; padding: 4px; width: 24px; text-align: center; color: #666; }
+.ztree li a { height: 24px; line-height: 24px; }
+.ztree li a:hover { text-decoration: inherit; }
+.ztree li a.curSelectedNode { height: 23px; background-color: transparent; border: 0; }
+/*选中状态*/
+.ztree li a.curSelectedNode span { background-color: #1988fa; color: #fff; border-radius: 0 4px 4px 0; padding: 1px 6px 3px 0; }
+.ztree li a.curSelectedNode span.fa, .ztree li a.curSelectedNode span.iconfont { height: 22px; margin-right: 0; border-radius: 4px 0 0 4px; padding: 4px; }
+.ztree li a.curSelectedNode span.button { background-color: #fff; }
+.ztree li a.curSelectedNode input { color: #000; }
+.ztree li a input.rename { border: 1px solid #7ec4cc; font-size: 14px; height: 22px; margin: 0; padding: 0; width: 150px; }
+.ztree li span.button.switch { height: 24px;padding: inherit;}
+.ztree li span.button.root_open { background-position: -92px -52px; }
+.ztree li span.button.roots_open { background-position: -92px 4px; }
+.ztree li span.button.center_open { background-position: -92px -16px; }
+.ztree li span.button.bottom_open { background-position: -92px -34px; }
+.ztree li span.button.root_close { background-position: -74px -52px; }
+.ztree li span.button.roots_close { background-position: -74px 4px; }
+.ztree li span.button.center_close { background-position: -74px -16px; }
+.ztree li span.button.bottom_close { background-position: -74px -34px; }
+.ztree li span.button.bottom_docu { background-position: -56px -14px; }
+.ztree li span.button.bottom_docu { background-position: -56px -32px; }
+.ztree li span.button.chk.checkbox_false_full { }
+/**ztree样式调整结束**/

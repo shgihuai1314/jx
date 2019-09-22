@@ -1,0 +1,131 @@
+/*
+ * jQuery Basic Table
+ * Author: Jerry Low
+ */
+
+table.bt thead,
+table.bt tbody th {
+  display: none;
+}
+
+table.bt tfoot th,
+table.bt tfoot td,
+table.bt tbody td {
+  border: none;
+  display: block;
+  vertical-align: top;
+}
+
+table.bt tfoot th:before,
+table.bt tfoot td:before,
+table.bt tbody td:before {
+  content: attr(data-th) ": ";
+  font-weight: bold;
+  width: 6.5em;
+  display: inline-block;
+}
+
+table.bt tfoot th.bt-hide,
+table.bt tfoot td.bt-hide,
+table.bt tbody td.bt-hide {
+  display: none;
+}
+
+table.bt tfoot th .bt-content,
+table.bt tfoot td .bt-content,
+table.bt tbody td .bt-content {
+  vertical-align: top;
+}
+
+.bt-wrapper.active {
+  max-height: 310px;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+
+/*以下为自定义部分*/
+.table-box{
+  margin: 0 auto;
+  padding: 10px;
+}
+.layui-table textarea{
+  border-color: #e2e2e2;
+  width: 100%;
+  height: 60px;
+  padding: 5px;
+  border-radius: 3px;
+  resize: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+
+@media only screen and (max-width: 768px) {
+  table{
+    border: 1px solid #e2e2e2;
+  }
+  table tbody tr:nth-child(2n-1){
+    background:#f2f2f2;
+  }
+  table.bt tbody td{
+    border-bottom: 1px solid #e2e2e2;
+  }
+
+  table tbody tr:nth-child(2n):hover{
+    background: inherit !important;
+  }
+  table tbody tr td:after{
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background: #e2e2e2;
+    left: 32%;
+    top: 0;
+  }
+  table.bt tfoot th:before,
+  table.bt tfoot td:before,
+  table.bt tbody td:before {
+    content: attr(data-th) ": ";
+    font-weight: bold;
+    width: 30%;
+    vertical-align: middle;
+    display: inline-block;
+    /*white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;*/
+  }
+  table.bt tbody td .bt-content {
+    width: 70%;
+    padding-left: 15px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    vertical-align: middle;
+    display: inline-block;
+  }
+  table.bt tbody td .bt-content textarea{
+    width: 100%;
+  }
+
+  table.two-axis tr td:first-of-type {
+    background: #f2f2f2;
+  }
+
+  table.two-axis tr td:first-of-type,
+  table.two-axis tr:nth-of-type(2n+2) td:first-of-type,
+  table.two-axis tr td:first-of-type:before {
+    background: #f2f2f2;
+  }
+
+  table.two-axis tr td:first-of-type:after {
+    display: none;
+  }
+
+  table.two-axis tr td:first-of-type {
+    border-bottom: 1px solid #e4ebeb;
+  }
+}
+

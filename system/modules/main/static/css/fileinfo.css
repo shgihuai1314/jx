@@ -1,0 +1,85 @@
+/*******************************************************************
+ * 上传附件样式
+ *******************************************************************/
+/*************************** PC端 **********************************/
+
+#layer-loading { display: block; float: left; width: 32px; height: 32px; background: url('/static/lib/layer/skin/default/loading-2.gif') no-repeat; }
+#layer-msg { line-height: 32px; font-size: 18px; margin-left: 12px; }
+.layui-upload {position: relative;padding: 10px 0;}
+.layui-upload h3 {line-height: 30px; color: #82939e; font-weight: bold; font-size: 14px;}
+.layui-upload h3 i {font-size: 16px; font-weight: bold;}
+.layui-upload input[type="file"] { position: absolute; width: 86px; padding: 3px; border: solid transparent; opacity: 0; filter: alpha(opacity=0); cursor: pointer; top: 10px; left: 0;}
+.layui-upload .layui-upload-list { overflow: hidden; margin: 0; }
+/* 图片展示 */
+.layui-upload .layui-upload-list li.image-item { display: inline-block; padding-top: 10px; margin-right: 20px; position: relative; text-align: center;}
+.layui-upload .layui-upload-list li.image-item img { max-height: 88px; }
+.layui-upload .layui-upload-list li.image-item span.filename { display: block; text-align: center; cursor: pointer; line-height: 30px; word-break:keep-all; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.layui-upload .layui-upload-list li i { position: absolute; top: 0; right: -12px; font-size: 24px; border-radius: 50%; background-color: white; color: #ff5500;}
+/* 附件图标展示 */
+.layui-upload .layui-upload-list li.file-item { position: relative; padding: 14px 20px; border-top: 1px solid #EBEFF6; overflow: hidden; zoom: 1; }
+.layui-upload .layui-upload-list li.file-item:first-child { border-top: none;}
+.layui-upload .layui-upload-list li.file-item img { float: left; margin-right: 10px}
+.layui-upload .layui-upload-list li.file-item .file-info { float: left; line-height: 22px; position: relative}
+.layui-upload .layui-upload-list li.file-item .file-info .file-name { font-size: 14px; color: #82939e; }
+.layui-upload .layui-upload-list li.file-item .file-info .file-name span { color: #af8dbc; }
+.layui-upload .layui-upload-list li.file-item .file-info a {cursor: pointer; color: #1988fa;  margin-right: 10px;}
+.layui-upload .layui-upload-list li.file-item .file-info a.download-btn { color: #3497DB;}
+.layui-upload .layui-upload-list li.file-item .file-info a.del-btn { color: #ff4a3b;}
+
+/*************************** 移动端 *********************************/
+.weui-uploader__hd {position: relative;}
+.weui-uploader__info i {font-size: 20px;}
+/* 图片展示 */
+.weui-uploader__files li.image-item { display: inline-block; padding: 10px 0; margin-right: 15px; position: relative; text-align: center;}
+.weui-uploader__files li.image-item img { max-width: 88px; height: 88px }
+.weui-uploader__files li.image-item span.filename { display: block; text-align: center; cursor: pointer; line-height: 30px; word-break:keep-all; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.weui-uploader__files li i { position: absolute; top: 0; right: -12px; font-size: 24px; border-radius: 50%; background-color: white; color: #ff5500;}
+/* 附件图标展示 */
+.weui-uploader__files li.file-item { position: relative; padding: 8px 0; border-top: 1px solid #EBEFF6; overflow: hidden; zoom: 1; }
+.weui-uploader__files li.file-item:first-child { border-top: none;}
+.weui-uploader__files li.file-item img { float: left; margin-right: 10px}
+.weui-uploader__files li.file-item .file-info { line-height: 22px; position: relative; font-size: 14px;}
+.weui-uploader__files li.file-item .file-info .file-name { color: #82939e;  word-break:keep-all; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.weui-uploader__files li.file-item .file-info .file-name span { color: #af8dbc; }
+.weui-uploader__files li.file-item .file-info a.download-btn { cursor: pointer; color: #3497DB; }
+.weui-uploader__files li.file-item .file-info a.del-btn { cursor: pointer; color: #ff4a3b; }
+
+/*******************************************************************
+ * 附件展示样式
+ *******************************************************************/
+/*************************** PC端 **********************************/
+/* 附件图标展示 */
+.file-view {padding: 10px 15px;}
+.file-view h3 {line-height: 30px; color: #82939e; font-size: 14px;margin-bottom: 10px}
+.file-view h3 i {font-size: 16px;}
+.file-view .file-list li { position: relative; padding: 14px 20px; border-top: 1px solid #EBEFF6; overflow: hidden; zoom: 1;}
+/*.file-view .file-list li:first-child { border-top: none;}*/
+.file-view .file-list li img { float: left; margin-right: 10px}
+.file-view .file-list li .file-info { float: left; line-height: 22px; position: relative; }
+.file-view .file-list li .file-info .file-name { font-size: 14px; color: #82939e; }
+.file-view .file-list li .file-info .file-name span { color: #af8dbc; }
+.file-view .file-list li .file-info a { cursor: pointer; color: #3497DB; margin-right: 10px;}
+/* 图片展示 */
+.file-view .layer-photos-list li { float: left; width: 100px; line-height: 80px; text-align: center; margin-right: 15px; margin-bottom: 10px;}
+.file-view .layer-photos-list img { max-width: 100px; max-height: 80px; margin: 0 auto; cursor: pointer; }
+.file-view .layer-photos-list .filename { display: block; color: #58585c; cursor: pointer; line-height: 28px; text-align: center; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;}
+.file-view .layer-photos-list .file-desc { display: block; text-align: center; font-size: 12px; line-height: 16px; color: #777;}
+.file-view .layer-photos-list .file-desc i.fa { font-size: inherit; height: inherit;}
+
+/*************************** 移动端 *********************************/
+.weui-file-view {margin: 0 -15px;}
+.weui-file-view .weui-uploader__title {padding-bottom: 10px; color: #B2B2B2; font-size: 14px;}
+/* 附件图标展示 */
+.weui-file-view__files li { position: relative; padding: 8px 0; border-top: 1px solid #EBEFF6; overflow: hidden; zoom: 1;}
+.weui-file-view__files li:first-child { border-top: none;}
+.weui-file-view__files li img { float: left; margin-right: 10px}
+.weui-file-view__files li .file-info { line-height: 22px; position: relative; font-size: 14px; }
+.weui-file-view__files li .file-info .file-name { color: #82939e;  word-break:keep-all; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.weui-file-view__files li .file-info .file-name span { color: #af8dbc; }
+.weui-file-view__files li .file-info a { cursor: pointer; color: #3497DB; }
+
+/* 图片展示 */
+.weui-file-view__images{margin-right: -4px}
+.weui-file-view__images li { max-width: 79px; height: 100px; margin: 0 8px 8px 0; float: left;}
+.weui-file-view__images li img { height: 79px; width: 100%}
+.weui-photo-browser-modal .caption {bottom: 10px;}

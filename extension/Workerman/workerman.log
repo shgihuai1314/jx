@@ -1,0 +1,328 @@
+2019-03-25 15:43:41 pid:1 exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Start\message.php:45
+Stack trace:
+#0 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Start\message.php(45): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', 'D:\\phpStudy\\PHP...', 45, Array)
+#1 [internal function]: {closure}(Object(Workerman\Connection\TcpConnection), '{"token":"9N6F9...')
+#2 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Connection\TcpConnection.php(639): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), '{"token":"9N6F9...')
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #207)
+#4 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Events\Select.php(286): call_user_func_array(Array, Array)
+#5 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Worker.php(2136): Workerman\Events\Select->loop()
+#6 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Worker.php(1189): Workerman\Worker->run()
+#7 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Worker.php(1132): Workerman\Worker::forkWorkersForWindows()
+#8 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Worker.php(466): Workerman\Worker::forkWorkers()
+#9 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Start\message.php(78): Workerman\Worker::runAll()
+#10 {main}
+2019-03-25 15:43:41 pid:1 Worker process terminated
+2019-03-25 15:43:50 pid:1 exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Start\message.php:45
+Stack trace:
+#0 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Start\message.php(45): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', 'D:\\phpStudy\\PHP...', 45, Array)
+#1 [internal function]: {closure}(Object(Workerman\Connection\TcpConnection), '{"token":"9N6F9...')
+#2 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Connection\TcpConnection.php(639): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), '{"token":"9N6F9...')
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #145)
+#4 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Events\Select.php(286): call_user_func_array(Array, Array)
+#5 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Worker.php(2136): Workerman\Events\Select->loop()
+#6 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Worker.php(1189): Workerman\Worker->run()
+#7 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Worker.php(1132): Workerman\Worker::forkWorkersForWindows()
+#8 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Worker.php(466): Workerman\Worker::forkWorkers()
+#9 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Start\message.php(78): Workerman\Worker::runAll()
+#10 {main}
+2019-03-25 15:43:50 pid:1 Worker process terminated
+2019-03-25 18:10:37 pid:1 exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Start\message.php:45
+Stack trace:
+#0 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Start\message.php(45): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', 'D:\\phpStudy\\PHP...', 45, Array)
+#1 [internal function]: {closure}(Object(Workerman\Connection\TcpConnection), '{"token":"Rqibc...')
+#2 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Connection\TcpConnection.php(639): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), '{"token":"Rqibc...')
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #194)
+#4 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Events\Select.php(286): call_user_func_array(Array, Array)
+#5 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Worker.php(2136): Workerman\Events\Select->loop()
+#6 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Worker.php(1189): Workerman\Worker->run()
+#7 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Worker.php(1132): Workerman\Worker::forkWorkersForWindows()
+#8 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Worker.php(466): Workerman\Worker::forkWorkers()
+#9 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Start\message.php(78): Workerman\Worker::runAll()
+#10 {main}
+2019-03-25 18:10:38 pid:1 Worker process terminated
+2019-03-26 10:51:19 pid:1 exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Start\message.php:45
+Stack trace:
+#0 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Start\message.php(45): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', 'D:\\phpStudy\\PHP...', 45, Array)
+#1 [internal function]: {closure}(Object(Workerman\Connection\TcpConnection), '{"token":"qxSFc...')
+#2 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Connection\TcpConnection.php(639): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), '{"token":"qxSFc...')
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #179)
+#4 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Events\Select.php(286): call_user_func_array(Array, Array)
+#5 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Worker.php(2136): Workerman\Events\Select->loop()
+#6 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Worker.php(1189): Workerman\Worker->run()
+#7 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Worker.php(1132): Workerman\Worker::forkWorkersForWindows()
+#8 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Worker.php(466): Workerman\Worker::forkWorkers()
+#9 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Start\message.php(78): Workerman\Worker::runAll()
+#10 {main}
+2019-03-26 10:51:19 pid:1 Worker process terminated
+2019-03-26 10:51:22 pid:1 exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Start\message.php:45
+Stack trace:
+#0 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Start\message.php(45): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', 'D:\\phpStudy\\PHP...', 45, Array)
+#1 [internal function]: {closure}(Object(Workerman\Connection\TcpConnection), '{"token":"qxSFc...')
+#2 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Connection\TcpConnection.php(639): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), '{"token":"qxSFc...')
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #179)
+#4 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Events\Select.php(286): call_user_func_array(Array, Array)
+#5 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Worker.php(2136): Workerman\Events\Select->loop()
+#6 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Worker.php(1189): Workerman\Worker->run()
+#7 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Worker.php(1132): Workerman\Worker::forkWorkersForWindows()
+#8 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Worker.php(466): Workerman\Worker::forkWorkers()
+#9 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Start\message.php(78): Workerman\Worker::runAll()
+#10 {main}
+2019-03-26 10:51:22 pid:1 Worker process terminated
+2019-03-26 14:15:52 pid:1 exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Start\message.php:45
+Stack trace:
+#0 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Start\message.php(45): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', 'D:\\phpStudy\\PHP...', 45, Array)
+#1 [internal function]: {closure}(Object(Workerman\Connection\TcpConnection), '{"token":"qxSFc...')
+#2 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Connection\TcpConnection.php(639): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), '{"token":"qxSFc...')
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #181)
+#4 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Events\Select.php(286): call_user_func_array(Array, Array)
+#5 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Worker.php(2136): Workerman\Events\Select->loop()
+#6 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Worker.php(1189): Workerman\Worker->run()
+#7 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Worker.php(1132): Workerman\Worker::forkWorkersForWindows()
+#8 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Worker.php(466): Workerman\Worker::forkWorkers()
+#9 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Start\message.php(78): Workerman\Worker::runAll()
+#10 {main}
+2019-03-26 14:15:52 pid:1 Worker process terminated
+2019-03-26 16:05:00 pid:1 exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Start\message.php:45
+Stack trace:
+#0 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Start\message.php(45): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', 'D:\\phpStudy\\PHP...', 45, Array)
+#1 [internal function]: {closure}(Object(Workerman\Connection\TcpConnection), '{"token":"2KoM-...')
+#2 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Connection\TcpConnection.php(639): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), '{"token":"2KoM-...')
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #197)
+#4 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Events\Select.php(286): call_user_func_array(Array, Array)
+#5 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Worker.php(2136): Workerman\Events\Select->loop()
+#6 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Worker.php(1189): Workerman\Worker->run()
+#7 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Worker.php(1132): Workerman\Worker::forkWorkersForWindows()
+#8 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Worker.php(466): Workerman\Worker::forkWorkers()
+#9 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Start\message.php(78): Workerman\Worker::runAll()
+#10 {main}
+2019-03-26 16:05:00 pid:1 Worker process terminated
+2019-03-26 16:05:03 pid:1 exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Start\message.php:45
+Stack trace:
+#0 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Start\message.php(45): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', 'D:\\phpStudy\\PHP...', 45, Array)
+#1 [internal function]: {closure}(Object(Workerman\Connection\TcpConnection), '{"token":"2KoM-...')
+#2 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Connection\TcpConnection.php(639): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), '{"token":"2KoM-...')
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #181)
+#4 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Events\Select.php(286): call_user_func_array(Array, Array)
+#5 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Worker.php(2136): Workerman\Events\Select->loop()
+#6 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Worker.php(1189): Workerman\Worker->run()
+#7 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Worker.php(1132): Workerman\Worker::forkWorkersForWindows()
+#8 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Worker.php(466): Workerman\Worker::forkWorkers()
+#9 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Start\message.php(78): Workerman\Worker::runAll()
+#10 {main}
+2019-03-26 16:05:03 pid:1 Worker process terminated
+2019-03-26 16:05:06 pid:1 exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Start\message.php:45
+Stack trace:
+#0 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Start\message.php(45): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', 'D:\\phpStudy\\PHP...', 45, Array)
+#1 [internal function]: {closure}(Object(Workerman\Connection\TcpConnection), '{"token":"2KoM-...')
+#2 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Connection\TcpConnection.php(639): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), '{"token":"2KoM-...')
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #145)
+#4 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Events\Select.php(286): call_user_func_array(Array, Array)
+#5 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Worker.php(2136): Workerman\Events\Select->loop()
+#6 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Worker.php(1189): Workerman\Worker->run()
+#7 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Worker.php(1132): Workerman\Worker::forkWorkersForWindows()
+#8 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Worker.php(466): Workerman\Worker::forkWorkers()
+#9 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Start\message.php(78): Workerman\Worker::runAll()
+#10 {main}
+2019-03-26 16:05:06 pid:1 Worker process terminated
+2019-03-26 16:07:16 pid:1 exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Start\message.php:45
+Stack trace:
+#0 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Start\message.php(45): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', 'D:\\phpStudy\\PHP...', 45, Array)
+#1 [internal function]: {closure}(Object(Workerman\Connection\TcpConnection), '{"token":"2KoM-...')
+#2 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Connection\TcpConnection.php(639): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), '{"token":"2KoM-...')
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #181)
+#4 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Events\Select.php(286): call_user_func_array(Array, Array)
+#5 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Worker.php(2136): Workerman\Events\Select->loop()
+#6 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Worker.php(1189): Workerman\Worker->run()
+#7 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Worker.php(1132): Workerman\Worker::forkWorkersForWindows()
+#8 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Worker.php(466): Workerman\Worker::forkWorkers()
+#9 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Start\message.php(78): Workerman\Worker::runAll()
+#10 {main}
+2019-03-26 16:07:16 pid:1 Worker process terminated
+2019-03-26 17:46:36 pid:1 exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Start\message.php:45
+Stack trace:
+#0 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Start\message.php(45): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', 'D:\\phpStudy\\PHP...', 45, Array)
+#1 [internal function]: {closure}(Object(Workerman\Connection\TcpConnection), '{"token":"2KoM-...')
+#2 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Connection\TcpConnection.php(639): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), '{"token":"2KoM-...')
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #186)
+#4 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Events\Select.php(286): call_user_func_array(Array, Array)
+#5 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Worker.php(2136): Workerman\Events\Select->loop()
+#6 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Worker.php(1189): Workerman\Worker->run()
+#7 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Worker.php(1132): Workerman\Worker::forkWorkersForWindows()
+#8 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Worker.php(466): Workerman\Worker::forkWorkers()
+#9 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Start\message.php(78): Workerman\Worker::runAll()
+#10 {main}
+2019-03-26 17:46:36 pid:1 Worker process terminated
+2019-03-29 11:17:51 pid:1 exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Start\message.php:45
+Stack trace:
+#0 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Start\message.php(45): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', 'D:\\phpStudy\\PHP...', 45, Array)
+#1 [internal function]: {closure}(Object(Workerman\Connection\TcpConnection), '{"token":"t2B1t...')
+#2 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Connection\TcpConnection.php(639): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), '{"token":"t2B1t...')
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #145)
+#4 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Events\Select.php(286): call_user_func_array(Array, Array)
+#5 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Worker.php(2136): Workerman\Events\Select->loop()
+#6 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Worker.php(1189): Workerman\Worker->run()
+#7 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Worker.php(1132): Workerman\Worker::forkWorkersForWindows()
+#8 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Worker.php(466): Workerman\Worker::forkWorkers()
+#9 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Start\message.php(78): Workerman\Worker::runAll()
+#10 {main}
+2019-03-29 11:17:51 pid:1 Worker process terminated
+2019-03-29 11:17:53 pid:1 exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Start\message.php:45
+Stack trace:
+#0 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Start\message.php(45): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', 'D:\\phpStudy\\PHP...', 45, Array)
+#1 [internal function]: {closure}(Object(Workerman\Connection\TcpConnection), '{"token":"t2B1t...')
+#2 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Connection\TcpConnection.php(639): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), '{"token":"t2B1t...')
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #145)
+#4 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Events\Select.php(286): call_user_func_array(Array, Array)
+#5 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Worker.php(2136): Workerman\Events\Select->loop()
+#6 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Worker.php(1189): Workerman\Worker->run()
+#7 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Worker.php(1132): Workerman\Worker::forkWorkersForWindows()
+#8 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Worker.php(466): Workerman\Worker::forkWorkers()
+#9 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Start\message.php(78): Workerman\Worker::runAll()
+#10 {main}
+2019-03-29 11:17:53 pid:1 Worker process terminated
+2019-03-29 11:17:55 pid:1 exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Start\message.php:45
+Stack trace:
+#0 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Start\message.php(45): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', 'D:\\phpStudy\\PHP...', 45, Array)
+#1 [internal function]: {closure}(Object(Workerman\Connection\TcpConnection), '{"token":"t2B1t...')
+#2 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Connection\TcpConnection.php(639): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), '{"token":"t2B1t...')
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #145)
+#4 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Events\Select.php(286): call_user_func_array(Array, Array)
+#5 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Worker.php(2136): Workerman\Events\Select->loop()
+#6 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Worker.php(1189): Workerman\Worker->run()
+#7 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Worker.php(1132): Workerman\Worker::forkWorkersForWindows()
+#8 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Worker.php(466): Workerman\Worker::forkWorkers()
+#9 D:\phpStudy\PHPTutorial\WWW\yd_mooc\extension\Workerman\Start\message.php(78): Workerman\Worker::runAll()
+#10 {main}
+2019-03-29 11:17:55 pid:1 Worker process terminated
+2019-03-29 07:05:34 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:34 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:34 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:34 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:34 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:34 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:34 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:34 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:34 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:34 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:34 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:34 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:34 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:34 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:34 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:34 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:34 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:34 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:34 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:34 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:34 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:34 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:34 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:34 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:34 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:34 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:34 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:35 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:35 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:35 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:35 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:35 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:35 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:35 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:35 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:35 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:35 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:35 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:35 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:35 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:35 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:35 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:35 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:35 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:35 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:35 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:35 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:35 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:35 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:35 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:35 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:35 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:35 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:35 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:35 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:35 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:35 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:35 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:35 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:35 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:35 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:35 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:35 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:35 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:35 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:36 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:36 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:36 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:36 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:36 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:36 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:36 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:36 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:36 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:37 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:37 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:37 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:37 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:37 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:38 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:38 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:39 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:39 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:39 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:40 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:41 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:42 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:43 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:44 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:44 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:45 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:47 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:51 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:51 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:53 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:53 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:55 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:56 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:05:58 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:06:00 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:06:04 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:06:06 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:06:07 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:06:10 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:06:15 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:06:18 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:06:22 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:06:23 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:06:26 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:06:27 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:06:32 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:06:35 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:06:38 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:06:41 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:06:46 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:06:47 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:06:48 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:06:50 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:06:53 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:06:56 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:06:59 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:07:00 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:07:04 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:07:06 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:07:08 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:07:12 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:07:16 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:07:20 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:07:24 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:07:28 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:07:32 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-29 07:07:37 pid:1 Bad request for Register service. Request info(IP:127.0.0.1, Request Buffer:GET / HTTP/1.1). See http://wiki.workerman.net/Error4 for detail
