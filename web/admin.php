@@ -1,5 +1,5 @@
 <?php
-defined('YII_DEBUG') or define('YII_DEBUG', false);  // IE8调试时必须关闭debug，否则可能会有些js执行错误
+defined('YII_DEBUG') or define('YII_DEBUG', true);  // IE8调试时必须关闭debug，否则可能会有些js执行错误
 defined('YII_ENV') or define('YII_ENV', 'dev');
 define('APP_NAME', 'admin'); // 应用名称，必填
 
