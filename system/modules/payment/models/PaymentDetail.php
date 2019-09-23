@@ -2,6 +2,8 @@
 
 namespace system\modules\payment\models;
 
+use system\core\utils\Tool;
+use system\modules\user\models\UserExtend;
 use yii\helpers\ArrayHelper;
 use Yii;
 
@@ -23,6 +25,9 @@ use Yii;
  */
 class PaymentDetail extends \system\models\Model
 {
+    protected static $appid='';
+    protected static $mch_id='';
+    protected static $key='';
     /**
      * @inheritdoc
      */
@@ -77,13 +82,14 @@ class PaymentDetail extends \system\models\Model
         }
 
         $tradeModel = new self();
-
-        $tradeModel->third_order_number =$data['third_order_number']; //第三方订单号
+        $tradeModel->third_order_number =''; //第三方订单号
         $tradeModel->trade_no=date('Y',time()).date('m',time()).date('d',time()).date('H',time()).date('i',time()).rand(10000, 99999);//平台订单号
         $tradeModel->total_fee = floor($data['fee']*100); //金额
-        $tradeModel->pay_type=$data['pay_type'];//支付方式
+        $tradeModel->pay_type=2;//支付方式
         $tradeModel->crate_time = time();//下单时间
-        $tradeModel->app_code=$data['app_code'];
+        $tradeModel->app_code=isset($data['app_code'])?$data['app_code']:'jx';
+        $tradeModel->user_id=Yii::$app->user->id;
+        $tradeModel->username=Yii::$app->user->realname;
 
         if (!$tradeModel->save()) {
             print_r($tradeModel->getErrors());
@@ -149,5 +155,64 @@ class PaymentDetail extends \system\models\Model
         }
 
         return $reqPar;
+    }
+
+
+    /**
+     * 微信公众号支付
+     * @param $data
+     * @return array
+     */
+    public static function wechat($data)
+    {
+        //获取微信支付的配置
+
+        //获取openid
+        $model = UserExtend::findOne(['user_id' => Yii::$app->user->id]);
+        $openid = $model->extend_openid;
+
+
+        $unified = [
+            'appid' => self::$appid,
+            'mch_id' => self::$mch_id,
+            'openid'=>$openid,
+            'attach' =>'驾校考试',//自定义参数
+            'body' => $data->id, //商品名称
+            'nonce_str' => WxPay::createNonceStr(),
+            'notify_url' => Yii::$app->request->hostInfo . Yii::$app->request->scriptUrl . '/callback/notify',
+            'out_trade_no' => $data->trade_no, //本地订单号
+            'spbill_create_ip' => '127.0.0.1',
+            'total_fee' => intval($data->total_fee), // 金额  单位 转为分
+            'trade_type' => 'JSAPI',
+        ];
+
+        $unified['sign'] = self::getSign(array_filter($unified),self::$key);
+        $unified = array_filter($unified);//去除空的数据
+
+        $responseXml = Tool::postData('https://api.mch.weixin.qq.com/pay/unifiedorder', WxPay::arrayToXml($unified));
+        $unifiedOrder = simplexml_load_string($responseXml, 'SimpleXMLElement', LIBXML_NOCDATA);
+
+        if ($unifiedOrder === false) {
+            die('parse xml error');
+        }
+
+        if ($unifiedOrder->return_code != 'SUCCESS') {
+            die($unifiedOrder->return_msg);
+        }
+
+        if ($unifiedOrder->result_code != 'SUCCESS') {
+            die($unifiedOrder->err_code);
+        }
+
+        $res = array(
+            "appId" => self::$appid,
+            "timeStamp" => (string)time(), //这里是字符串的时间戳，不是int，
+            "nonceStr" => WxPay::createNonceStr(),
+            "package" => "prepay_id=" . $unifiedOrder->prepay_id,
+            "signType" => 'MD5',
+        );
+        $res['paySign'] = self::getSign($res, self::$key);
+        $res['fee'] = $data->total_fee / 100;
+        return $res;
     }
 }

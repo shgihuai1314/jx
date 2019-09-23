@@ -12,17 +12,70 @@ namespace Api;
 use system\core\utils\Tool;
 use system\modules\payment\models\paymentApp;
 use system\modules\payment\models\PaymentDetail;
+use system\modules\payment\models\WxPay;
 use Yii;
 
 class CallbackController extends BaseApiController
 {
-
+    private $key='';
     public $notAuthAction = ['*'];
+
+    /**
+     * 异步回调
+     */
+    public function actionNotify(){
+        //  配置项：微信支付参数
+        //$postStr = $GLOBALS["HTTP_RAW_POST_DATA"]; //此方法跟$_POST差不多
+        $postStr = Yii::$app->request->getRawBody();//返回网页的内容
+        $postObj = simplexml_load_string($postStr, 'SimpleXMLElement', LIBXML_NOCDATA);
+
+        if ($postObj === false) {
+            die('parse xml error');
+        }
+
+        if ($postObj->return_code != 'SUCCESS') {
+            die($postObj->return_msg);
+        }
+
+        if ($postObj->result_code != 'SUCCESS') {
+            die($postObj->err_code);
+        }
+
+        $arr = (array)$postObj;
+        $openid = $arr['openid'];
+        unset($arr['sign']);
+
+        if (WxPay::getSign($arr, $this->key) != $postObj->sign) {
+            exit('sing error');
+        }
+
+        //查询订单
+        $pay_msg = PaymentDetail::findOne(['transaction_id' => $arr['transaction_id']]);
+        if (!$pay_msg) {
+            $updateData = [
+                'state' => 1,
+                'pay_at' => strtotime($arr['time_end']),
+                'data' => WxPay::arrayToXml($arr),
+                'pay_user_id' => $openid,
+                'transaction_id' => $arr['transaction_id'],
+            ];
+
+            $res = \Yii::$app->db->createCommand()->update('tab_payment_detail', $updateData,
+                ['trade_no' => $arr['out_trade_no']])->execute();
+
+            if (!$res) {
+                echo 'app error';
+                exit;
+            }
+        }
+        //支付完成给微信发送通知
+        return '<xml><return_code><![CDATA[SUCCESS]]></return_code><return_msg><![CDATA[OK]]></return_msg></xml>';
+    }
 
     /**
      * @info 所有的支付方式都在这里回调
      */
-    public function actionNotify($type)
+    public function actionNotifys($type)
     {
         if (!isset($type)) {
             echo '缺少支付参数';
