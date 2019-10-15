@@ -7,6 +7,7 @@
  */
 
 namespace Api;
+use Yii;
 use system\modules\payment\models\PaymentDetail;
 use system\modules\payment\models\ThirdPartyLogin;
 use system\modules\user\models\User;
@@ -24,7 +25,8 @@ class AuthLoginController extends BaseApiController
     public function beforeAction($action)
     {
         if (parent::beforeAction($action)) {
-            if (!\Yii::$app->request->getIsGet()) {
+
+            if (!Yii::$app->user->isGuest) {
                 $openid = \Yii::$app->session->remove('wechat_openid');
                 if (!empty($openid)) {
                     $model = UserExtend::findOne(\Yii::$app->user->id);

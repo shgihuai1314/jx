@@ -175,10 +175,8 @@ class ThirdPartyLogin extends Model
                 $model->delete(['user_id'=>$model->attributes['user_id']]);
                 return false;
             }
-
-            \Yii::$app->request->referrer;
-            \Yii::$app->request->getReferrer();
-
+           // \Yii::$app->request->referrer;
+           // \Yii::$app->request->getReferrer();
             $user = UserIdentity::findOne($model->user_id);
             \Yii::$app->user->login($user);
             return true;

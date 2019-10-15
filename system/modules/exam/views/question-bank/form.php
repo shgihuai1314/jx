@@ -1,4 +1,5 @@
 <?php
+use checkUrlUnique;
 
 /** @var yii\web\View $this */
 /** @var system\modules\payment\models\PayTradeDetail $model */
